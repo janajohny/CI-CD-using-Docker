@@ -36,7 +36,7 @@ pipeline {
             steps {
         withDockerRegistry([ credentialsId: "docker", url: "" ]) {
           sh  'docker push janajohny/samplewebapp:latest'
-          sh  'docker push janajohny/samplewebapp:$BUILD_NUMBER' 
+          //sh  'docker push janajohny/samplewebapp:$BUILD_NUMBER' 
         }
                   
           }
